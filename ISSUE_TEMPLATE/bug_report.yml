@@ -1,29 +1,75 @@
-```yaml
-name: Bug Report
-description: Report incorrect behavior
+name: "🐛 Bug Report (PsyData Labs)"
+description: Report anomalous behavior, telemetry discrepancies, or system exceptions.
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: ["bug", "triage", "psydata-core"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🌐 PsyData Labs L.L.C. | Technical Telemetry Portal
+        Thank you for taking the time to report this anomaly. Your submission directly optimizes our data processing pipelines. 
+        *Please ensure no sensitive personal data or unencrypted credentials are pasted into this public ledger.*
+
   - type: textarea
     id: description
     attributes:
-      label: What happened?
-      description: Clear description of the bug
+      label: "1. Anomaly Description"
+      description: Provide a clear, concise operational definition of what occurred versus what was expected.
+      placeholder: "e.g., Data stream pipeline truncated unexpectedly at 1024 packets under high concurrency..."
     validations:
       required: true
+
   - type: textarea
-    id: repo
+    id: reproduction_steps
     attributes:
-      label: Steps to reproduce
-      placeholder: "1. Go to...\n2. Click..."
+      label: "2. Deterministic Steps to Reproduce"
+      description: Step-by-step instructions to recreate the operational failure state.
+      placeholder: |
+        1. Initialize module with configurations...
+        2. Execute endpoint 'POST /v1/telemetry/ingest'...
+        3. Observe system state drift...
     validations:
       required: true
+
   - type: input
     id: version
     attributes:
-      label: Verison or commit SHA
+      label: "3. Build Version or Commit SHA"
+      description: The exact software build identifier, release tag, or Git commit hash where the bug was observed.
+      placeholder: "v2.4.1-alpha or 7f3b89a"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "4. Runtime Environment"
+      description: Select the infrastructure environment where the incident manifested.
+      options:
+        - "Production Cluster"
+        - "Staging / Sandbox"
+        - "Local Dev Instance (Docker)"
+        - "CI/CD Pipeline"
+    validations:
+      required: true
+
   - type: textarea
     id: logs
-    attriutes:
-      label: Relevant logs
-```
+    attributes:
+      label: "5. Contextual Logs & Stack Traces"
+      description: Paste relevant execution logs, console stack traces, or panic diagnostics here.
+      render: bash
+      placeholder: "[INFO] Ingesting... [ERROR] Core dropped connection: Connection reset by peer (OS Error 104)"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: validation_checks
+    attributes:
+      label: "6. Security & Compliance Acknowledgement"
+      description: Please certify the following statements before submitting your telemetry payload.
+      options:
+        - label: "I have verified that this issue does not contain private encryption keys, PII, or proprietary customer datasets."
+          required: true
+        - label: "I am testing on an updated build and have searched existing open issues for duplicates."
+          required: true
