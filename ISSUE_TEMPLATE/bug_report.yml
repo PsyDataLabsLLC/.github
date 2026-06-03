@@ -1,8 +1,3 @@
----
-title: Bug Report Form
-version: 0.5
----
-# Bug Report
 ```yaml
 name: Bug Report
 description: Report incorrect behavior
