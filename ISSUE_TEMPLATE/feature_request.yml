@@ -1,0 +1,48 @@
+name: "Feature Request (PsyData Labs)"
+description: Propose an enhancement, modular optimization, or system capability extension.
+title: "[Feature]: "
+labels: ["enhancement", "triage", "product-backlog"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🌐 PsyData Labs L.L.C. | System Evolution Architecture
+        Thank you for submitting an enhancement proposal. We value highly structured, scalable, and modular design ideas that align with our core performance and security models.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "1. Core Architectural Challenge"
+      description: What specific engineering limitation, technical friction, or operational bottleneck does this proposal address?
+      placeholder: "e.g., Current telemetry pipelines lack granular backpressure controls when database writes spike..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "2. Proposed Structural Solution"
+      description: Provide a comprehensive technical breakdown of your suggested implementation, API design, or architectural shifts.
+      placeholder: "e.g., Introduce an in-memory ring buffer layer using standard asynchronous channels to decouple ingest from storage..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "3. Alternative Approaches Considered"
+      description: What other workarounds or architectures did you consider, and why are they suboptimal?
+      placeholder: "e.g., Scaling out individual worker instances, which introduces unnecessary resource overhead..."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: alignment_checks
+    attributes:
+      label: "4. Design & Alignment Verification"
+      description: Please certify the following structural goals.
+      options:
+        - label: "This proposal favors modular, decoupled architecture rather than building a monolithic dependency."
+          required: true
+        - label: "I understand that if approved, this feature must adhere to strict data integrity, telemetry compliance, and security standards."
+          required: true
