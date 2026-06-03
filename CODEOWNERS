@@ -1,0 +1,6 @@
+# Default owners
+* @PsyDataLabsLLC/engineering
+
+# Security-sensitive
+/security/ @PsyDataLabsLLC/security
+/.github/ @PSyDataLabsLLC/security
