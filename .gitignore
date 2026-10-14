@@ -1,0 +1,83 @@
+# ============================================================================= #
+# PsyData Labs L.L.C. - .gitignore                                              #
+# ============================================================================= #
+.dev/
+.DS_Store
+Thumbs.db
+.idea/
+
+# -- Credentials, Secrets, and Cryptographic --
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+*.csr
+*.der
+*.asc
+*.gpg
+*.pgp
+id_rsa*
+id_ed25519*
+id_ecdsa*
+.env
+.env.*
+!.env.example
+*secret*
+*credentials*
+*.vault
+
+# -- Regulated Data, Datasets, & Telemetry --
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.sql
+*.pcap
+*.pcapng
+
+# -- AI/ML Weights & Checkpoints --
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.bin
+*.ckpt
+*.gguf
+wandb/
+mlruns/
+
+# -- Infrastructure, Cloud State, Editors and Build Artifacts --
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.vagrant/
+kubeconfig*
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+node_modules/
+dist/
+build/
+target/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
