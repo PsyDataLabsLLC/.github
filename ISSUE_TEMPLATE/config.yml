@@ -1,0 +1,32 @@
+# ==============================================================================
+# PsyData Labs L.L.C. — Organization-Wide Issue Chooser Configuration
+# Path: ISSUE_TEMPLATE/config.yml (branch: latest)
+# Copyright (c) 2026 PsyData Labs L.L.C. All Rights Reserved (PDL-LIC-001)
+# ==============================================================================
+
+blank_issues_enabled: false
+
+contact_links:
+  - name: "🔒 Security Vulnerability Disclosure (Do Not Open Public Issue)"
+    url: "https://github.com/psydatalabsllc/.github/blob/latest/SECURITY.md"
+    about: "Report a security vulnerability or cryptographic flaw privately under our responsible disclosure policy (qualifies for the EAP Wave 1 Security Researcher Fast-Track)."
+
+  - name: "🚀 Early Access Program (EAP) — Backing, Tiers & Perks"
+    url: "https://github.com/psydatalabsllc/.github/blob/latest/docs/EARLY-ACCESS-PROGRAM.md"
+    about: "Explore Individual ($1–$2,500+) and Enterprise ($500–$25,000+) EAP pathways, Wave 0–4 sandbox access, FIDO2 hardware keys, and up to 375% platform credit matches."
+
+  - name: "⏳ Join the Free Public & Insider Waitlist"
+    url: "https://wait.psydata.net"
+    about: "Register for $0 at wait.psydata.net to receive encrypted status dispatches and Wave 4 Release Candidate (RC) invitations."
+
+  - name: "🏢 Enterprise Syndicate, Sponsorships & Custom Invoices"
+    url: "https://github.com/psydatalabsllc/.github/blob/latest/FUNDING.md"
+    about: "Information on corporate pre-purchases, MSA rate locks, Sponsored Directives (Node/SDK Bounties), and W-9 / commercial invoicing via early@psydata.org."
+
+  - name: "💬 Official PDL Discord & Community Support"
+    url: "https://discord.psydata.net/"
+    about: "Join the official PsyData Labs L.L.C. Discord server for real-time community discussions, #eap-lounge access, and general support."
+
+  - name: "📖 Support & Governance Documentation"
+    url: "https://github.com/psydatalabsllc/.github/blob/latest/SUPPORT.md"
+    about: "Review our official support channels, SLAs, and escalation pathways before opening a ticket."
