@@ -45,7 +45,7 @@ with more to come, we plan to provide a secure, compliant, auditable, and transp
 
 ---
 
-![PsyData Labs L.L.C. Wide Logo](./assets/PDL-NAME-WIDE.png)
+![PsyData Labs L.L.C. Wide Logo](/assets/PDL-NAME-WIDE.png)
 
 [^1]: PsyData Labs L.L.C. is an emerging applied systems company and hybrid intelligence lab. We are engineering zero-trust software ecosystems, infrastructure, identity, and providing AI governance and secure data services. PsyData Labs L.L.C. is also referred to as "PsyData Labs", "PsyData", "PDL", our as "us", "our", or the "Company". We encourage you to visit our [website][pdl], [GitHub][gh], and [GitLab][gl].
 
